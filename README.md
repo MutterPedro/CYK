@@ -1,0 +1,2 @@
+# CYK
+O objetivo do trabalho pr´atico ´e desenvolver um aplicativo que, usando o algoritmo CYK, verifique se uma GLC na FNC ´e capaz de derivar uma palavra p. O aplicativo deve ser desenvolvido em C ANSI ou Java. Deve receber como entrada (i) um arquivo texto com a GLC G na FNC e (ii) a palavra p que tentar´a ser derivada a partir de S. Deve prover como sa´ıda um arquivo texto com a matriz triangular produzida pelo algoritmo CYK.
