@@ -27,6 +27,4 @@ public class Production {
 	public void setSettings(List<String> settings) {
 		this.settings = settings;
 	}
-	
-	
 }

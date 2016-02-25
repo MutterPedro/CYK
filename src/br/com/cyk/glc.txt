@@ -1,4 +1,5 @@
-S −> AT | AB
+S −> AT 
+S −> AB
 T −> XB
 X −> AT
 X −> AB
