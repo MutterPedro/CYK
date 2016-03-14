@@ -33,6 +33,7 @@ public class CYK {
 									for(int l=0;l<productionsList.size();l++){
 										if(productionsList.get(l).getSettings().contains((var1[m]+var2[n]))){
 											//System.out.print("> "+productionsList.get(l).getVariable());
+											mat[i][j] = mat[i][j].replace(productionsList.get(l).getVariable()+",", "");
 											mat[i][j] += productionsList.get(l).getVariable()+",";
 										}
 									}
