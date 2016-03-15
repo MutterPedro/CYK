@@ -13,6 +13,7 @@ public class CYK {
 			
 			if(!flag){
 				System.out.println("Não está na forma normal de Chomsky");
+				return;
 			}
 			
 			String[][] mat = new String[args[1].length()+1][];		

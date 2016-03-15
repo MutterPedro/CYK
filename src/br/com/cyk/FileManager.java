@@ -59,7 +59,7 @@ public class FileManager {
 							}
 					    } 
 						
-					}
+					}					
 					else{
 						Character caractere = list.get(i).getSettings().get(j).charAt(0);						
 						
@@ -68,6 +68,9 @@ public class FileManager {
 							  	return false;
 					      }
 					
+					}
+					if(i > 0 && list.get(i).getSettings().get(j).equals(".")){
+						return false;
 					}
 					
 				}
@@ -93,6 +96,9 @@ public class FileManager {
 						  	return false;
 				      }
 				
+				}
+				if(i > 0 && list.get(i).getSettings().get(0).equals(".")){
+					return false;
 				}
 			}
 		}
