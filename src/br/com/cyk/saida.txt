@@ -1,16 +1,9 @@
-15	{C,S}	
-14	{C,A,S}	{S,C}	
-13	{B}	{A,S,C}	{B}	
-12	{B}	{B}	{B}	{B}	
-11	{C,A,S}	{B}	{C,S}	{B}	{C,S}	
-10	{}	{A,S,C}	{C,A,S}	{S,C}	{C,S,A}	{C,S}	
-9	{A}	{}	{B}	{A,S,C}	{B}	{C,S,A}	{C,S}	
-8	{}	{A}	{}	{B}	{B}	{B}	{C,S,A}	{C,S}	
-7	{}	{}	{}	{}	{C,S,A}	{B}	{B}	{C,A,S}	{S,C}	
-6	{}	{}	{}	{}	{}	{C,S,A}	{B}	{B}	{A,S,C}	{B}	
-5	{B}	{}	{}	{}	{A}	{}	{C,S,A}	{B}	{B}	{B}	{S,C}	
-4	{B}	{B}	{}	{}	{}	{A}	{}	{C,A,S}	{B}	{S,C}	{A,S,C}	{B}	
-3	{C,S}	{B}	{C,S}	{}	{}	{}	{A}	{}	{A,S,C}	{A,S,C}	{B}	{B}	{C,S}	
-2	{A,S}	{S,C}	{A,S}	{S,C}	{}	{}	{}	{A,S}	{B}	{B}	{B}	{S,C}	{A,S}	{S,C}	
-1	{B}	{A,C}	{B}	{A,C}	{B}	{B}	{B}	{B}	{A,C}	{A,C}	{A,C}	{A,C}	{B}	{A,C}	{B}	
-p	b	a	b	a	b	b	b	b	a	a	a	a	b	a	b	
+8	{C,S}	
+7	{A}	{S,C}	
+6	{}	{A}	{B}	
+5	{B}	{}	{}	{B}	
+4	{B}	{B}	{}	{}	{C,S}	
+3	{C,S}	{B}	{C,S}	{}	{A}	{C,S}	
+2	{A,S}	{S,C}	{A,S}	{S,C}	{}	{A,S}	{S,C}	
+1	{B}	{A,C}	{B}	{A,C}	{B}	{B}	{A,C}	{B}	
+p	b	a	b	a	b	b	a	b	

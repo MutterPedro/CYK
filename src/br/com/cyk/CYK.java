@@ -8,6 +8,13 @@ public class CYK {
 	public static void main(String[] args) {
 		try {			
 			List<Production> productionsList = FileManager.retrieveProductionsFromFile(args[0]);
+			
+			boolean flag = FileManager.isChomsky(productionsList);
+			
+			if(!flag){
+				System.out.println("Não está na forma normal de Chomsky");
+			}
+			
 			String[][] mat = new String[args[1].length()+1][];		
 			mat[0] = args[1].split("");
 			mat[1] = new String[args[1].length()];

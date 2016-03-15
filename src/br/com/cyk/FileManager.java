@@ -35,8 +35,70 @@ public class FileManager {
 			System.out.println("Arquivo de entrada inexistente.");
 		}
 		
-		
 		return list;
+	}
+	
+	public static boolean isChomsky(List<Production> list){
+				
+		for(int i= 0 ; i < list.size() ; i++){
+			
+			int tamCol = list.get(i).getSettings().size();
+			
+			
+			if(tamCol >= 2){// se houver mais de uma palavras
+				
+				for(int j = 0; j < tamCol; j++){// percorre palavra por palavra
+					
+					if(list.get(i).getSettings().get(j).length() >= 2){
+						for(int k = 0; k < list.get(i).getSettings().get(j).length(); k++){
+							
+					        Character caractere = list.get(i).getSettings().get(j).charAt(k);					        
+					        
+					        if(Character.isLowerCase(caractere)){					        	
+					        	return false;
+							}
+					    } 
+						
+					}
+					else{
+						Character caractere = list.get(i).getSettings().get(j).charAt(0);						
+						
+						  if(Character.isUpperCase(caractere)){						        	
+					        	//Achou minuscula					        	
+							  	return false;
+					      }
+					
+					}
+					
+				}
+				
+			}
+			else{
+				
+				if(list.get(i).getSettings().get(0).length() >= 2){
+					for(int k = 0; k < list.get(i).getSettings().get(0).length(); k++){
+						
+				        Character caractere = list.get(i).getSettings().get(0).charAt(k);				        
+				        
+				        if(Character.isLowerCase(caractere)){				        	
+				        	return false;
+						}
+				    } 
+					
+				}
+				else{
+					Character caractere = list.get(i).getSettings().get(0).charAt(0);					
+					if(Character.isUpperCase(caractere)){						        	
+				        	//Achou minuscula				          
+						  	return false;
+				      }
+				
+				}
+			}
+		}
+		
+		return true;
+		
 	}
 	
 	public static void writeResult(String fileName, String[][] mat) throws IOException{
